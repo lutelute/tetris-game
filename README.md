@@ -15,11 +15,17 @@ JavaScript版とPython版のテトリスゲームです。
 ## Python版
 
 ### 実行方法
-1. 必要なパッケージをインストール
+1. 仮想環境を作成・有効化
+   ```
+   python3 -m venv tetris_env
+   source tetris_env/bin/activate  # macOS/Linux
+   # または tetris_env\Scripts\activate  # Windows
+   ```
+2. 必要なパッケージをインストール
    ```
    pip install -r requirements.txt
    ```
-2. ゲームを実行
+3. ゲームを実行
    ```
    python tetris.py
    ```
