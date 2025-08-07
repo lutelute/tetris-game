@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テトリス</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .game-container {
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid #fff;
+            background-color: #111;
+        }
+        .game-info {
+            color: #fff;
+            margin-top: 20px;
+        }
+        .score {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .level {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .lines {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .controls {
+            color: #fff;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="tetris" width="300" height="600"></canvas>
+        <div class="game-info">
+            <div class="score">スコア: <span id="score">0</span></div>
+            <div class="level">レベル: <span id="level">1</span></div>
+            <div class="lines">ライン: <span id="lines">0</span></div>
+        </div>
+        <div class="controls">
+            <p>操作方法:</p>
+            <p>← → : 移動</p>
+            <p>↓ : 落下速度アップ</p>
+            <p>↑ : 回転</p>
+            <p>スペース : ハードドロップ</p>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
